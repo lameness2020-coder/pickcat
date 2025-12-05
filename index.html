@@ -1,0 +1,245 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Auswahl</title>
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Grid */
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Kacheln */
+.tile {
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(15px) brightness(1.2);
+  background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(200,200,200,0.2));
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 0 10px 30px rgba(255,255,255,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover-Puls */
+.tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(255,255,255,0.4);
+}
+
+/* Icons „ausgestanzt“ */
+.tile svg {
+  width: 80px;
+  height: 80px;
+  fill: none;
+  stroke: rgba(255,255,255,0.8);
+  stroke-width: 2;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 1;
+}
+.tile:hover svg {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+/* Text erscheint beim Hover */
+.tile span {
+  position: absolute;
+  color: #111;
+  font-weight: bold;
+  font-size: 28px;
+  opacity: 0;
+  transition: opacity 0.4s, transform 0.4s;
+  z-index: 2;
+}
+.tile:hover span {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+/* Video Kachel */
+.video { background: linear-gradient(135deg, rgba(230,230,230,0.4), rgba(200,200,200,0.2)); }
+
+/* Foto Kachel */
+.foto { background: linear-gradient(135deg, rgba(250,250,250,0.4), rgba(220,220,220,0.2)); }
+
+/* Design Kachel */
+.design { background: linear-gradient(135deg, rgba(240,240,240,0.4), rgba(210,210,210,0.2)); }
+
+/* Responsive */
+@media (max-width:1024px) { .tile { width:45%; height:250px; } }
+@media (max-width:600px)  { .tile { width:100%; height:200px; } }
+</style>
+</head>
+<body>
+<div class="category-grid">
+  <a class="tile video" href="/video">
+    <!-- Video-Icon Cut-out -->
+    <svg viewBox="0 0 24 24">
+      <path d="M3 22v-20l18 10-18 10z"/>
+    </svg>
+    <span>Video</span>
+  </a>
+  <a class="tile foto" href="/foto">
+    <!-- Foto-Icon Cut-out -->
+    <svg viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="5"/>
+      <rect x="3" y="5" width="18" height="14" rx="2"/>
+    </svg>
+    <span>Foto</span>
+  </a>
+  <a class="tile design" href="/design">
+    <!-- Design-Icon Cut-out -->
+    <svg viewBox="0 0 24 24">
+      <path d="M3 17.25v3.75h3.75l11.06-11.06-3.75-3.75-11.06 11.06zm20.71-11.04c.39-.39.39-1.02 0-1.41l-2.5-2.5a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.99-1.67z"/>
+    </svg>
+    <span>Design</span>
+  </a>
+</div>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Auswahl</title>
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Grid */
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Kacheln */
+.tile {
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(15px) brightness(1.2);
+  background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(200,200,200,0.2));
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 0 10px 30px rgba(255,255,255,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover-Puls */
+.tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(255,255,255,0.4);
+}
+
+/* Icons „ausgestanzt“ */
+.tile svg {
+  width: 80px;
+  height: 80px;
+  fill: none;
+  stroke: rgba(255,255,255,0.8);
+  stroke-width: 2;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 1;
+}
+.tile:hover svg {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+/* Text erscheint beim Hover */
+.tile span {
+  position: absolute;
+  color: #111;
+  font-weight: bold;
+  font-size: 28px;
+  opacity: 0;
+  transition: opacity 0.4s, transform 0.4s;
+  z-index: 2;
+}
+.tile:hover span {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+/* Video Kachel */
+.video { background: linear-gradient(135deg, rgba(230,230,230,0.4), rgba(200,200,200,0.2)); }
+
+/* Foto Kachel */
+.foto { background: linear-gradient(135deg, rgba(250,250,250,0.4), rgba(220,220,220,0.2)); }
+
+/* Design Kachel */
+.design { background: linear-gradient(135deg, rgba(240,240,240,0.4), rgba(210,210,210,0.2)); }
+
+/* Responsive */
+@media (max-width:1024px) { .tile { width:45%; height:250px; } }
+@media (max-width:600px)  { .tile { width:100%; height:200px; } }
+</style>
+</head>
+<body>
+<div class="category-grid">
+  <a class="tile video" href="/video">
+    <!-- Video-Icon Cut-out -->
+    <svg viewBox="0 0 24 24">
+      <path d="M3 22v-20l18 10-18 10z"/>
+    </svg>
+    <span>Video</span>
+  </a>
+  <a class="tile foto" href="/foto">
+    <!-- Foto-Icon Cut-out -->
+    <svg viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="5"/>
+      <rect x="3" y="5" width="18" height="14" rx="2"/>
+    </svg>
+    <span>Foto</span>
+  </a>
+  <a class="tile design" href="/design">
+    <!-- Design-Icon Cut-out -->
+    <svg viewBox="0 0 24 24">
+      <path d="M3 17.25v3.75h3.75l11.06-11.06-3.75-3.75-11.06 11.06zm20.71-11.04c.39-.39.39-1.02 0-1.41l-2.5-2.5a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.99-1.67z"/>
+    </svg>
+    <span>Design</span>
+  </a>
+</div>
+</body>
+</html>
+>>>>>>> 01670183f747f90db30c8be960d306dfd6868546
